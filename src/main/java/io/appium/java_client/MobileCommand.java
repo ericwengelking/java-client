@@ -52,6 +52,7 @@ public class MobileCommand {
     public static final String LOCK = "lock";
     public static final String IS_LOCKED = "isLocked";
     public static final String SHAKE = "shake";
+    public static final String HOME_SCREEN = "homeScreen";
     public static final String COMPLEX_FIND = "complexFind";
     public static final String OPEN_NOTIFICATIONS = "openNotifications";
     public static final String GET_NETWORK_CONNECTION = "getNetworkConnection";
@@ -101,6 +102,7 @@ public class MobileCommand {
             .put(LOCK, postC("/session/:sessionId/appium/device/lock"))
             .put(IS_LOCKED, postC("/session/:sessionId/appium/device/is_locked"))
             .put(SHAKE, postC("/session/:sessionId/appium/device/shake"))
+            .put(HOME_SCREEN, postC("/session/:sessionId/appium/device/homescreen"))
             .put(COMPLEX_FIND, postC("/session/:sessionId/appium/app/complex_find"))
             .put(OPEN_NOTIFICATIONS, postC("/session/:sessionId/appium/device/open_notifications"))
             .put(GET_NETWORK_CONNECTION, getC("/session/:sessionId/network_connection"))

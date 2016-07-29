@@ -19,6 +19,7 @@ package io.appium.java_client.ios;
 import static io.appium.java_client.MobileCommand.HIDE_KEYBOARD;
 import static io.appium.java_client.MobileCommand.LOCK;
 import static io.appium.java_client.MobileCommand.SHAKE;
+import static io.appium.java_client.MobileCommand.HOME_SCREEN;
 
 import com.google.common.collect.ImmutableMap;
 
@@ -230,6 +231,13 @@ public class IOSDriver<T extends WebElement>
      */
     @Override public void shake() {
         execute(SHAKE);
+    }
+
+    /**
+     * @see IOSDeviceActionShortcuts#home().
+     */
+    @Override public void homeScreen() {
+        execute(HOME_SCREEN);
     }
 
     /**
